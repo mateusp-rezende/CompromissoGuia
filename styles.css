@@ -1,0 +1,45 @@
+body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, #F8F4E1 0%, #E0DED2 100%);
+            background-attachment: fixed;
+        }
+        .img-header
+         {
+           
+           max-width: 100px;
+           height: auto;
+        }
+        .img-rodape {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .hover-effect {
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.03);
+            background-color: #B8860B;
+        }
+
+        .hover-effect:hover .button-text {
+            color: #F8F4E1;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite ease-in-out;
+        }
